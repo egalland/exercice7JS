@@ -4,7 +4,7 @@ function calcul(){
 var shoeSize = document.getElementById('shoeSize').value;
 var birthYear = document.getElementById('birthYear').value;
 // VERIFICATION DES VARIABLES
- if(/^[0-9.]+$/.test(shoeSize && birthYear) == true){
+ if(/^[0-9]+.?[0-9]+$/.test(shoeSize && birthYear) == true){
     // VERIFICATION OK -> CALCUL
     var result = shoeSize * 2;
     result =  result + 5;
